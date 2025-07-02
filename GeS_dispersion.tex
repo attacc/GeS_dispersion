@@ -1,0 +1,108 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[twocolumn,showpacs,prb,superscriptaddress,aps,floatfix]{revtex4-1}
+
+%\UseRawInputEncoding
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{nicefrac}
+\usepackage{hyperref}% add hypertext capabilities
+\usepackage{gensymb}  %to get deg symbol for example
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{soul}
+\usepackage{float}
+\usepackage{multirow}
+
+\def\kk         {{\bf k}}
+\def\qq		{{\bf q}}
+\def\rr         {{\bf r}}
+
+
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\newcommand{\cinam}{Aix Marseille Univ, CNRS, CINAM, Centre Interdisciplinaire de Nanoscience de Marseille, UMR 7325, Campus de Luminy, 13288 Marseille cedex 9, France}
+\newcommand{\piim}{Aix Marseille Univ, CNRS, PIIM, Physique des Interactions Ioniques et Moléculaires, UMR 7345, Marseille, France}
+\newcommand{\etsf}{European Theoretical Spectroscopy Facility (ETSF)}
+\newcommand{\wigner}{Wigner Research Center for Physics, PO. Box 49, H-1525 Budapest, Hungary}
+\newcommand{\bute}{Budapest University of Technology and Economics, M\H{u}eggyetem rkp. 3., 1111 Budapest, Hungary}
+\newcommand{\cnrmodena}{CNR‐NANO, Via Campi 213a, 41125 Modena, Italy}
+\newcommand{\cdymer}{\(\mathrm{C}_{\mathrm{B}}\mathrm{C}_{\mathrm{N}}\;\)}
+\newcommand{\CsubB}{\(\mathrm{C}_{\mathrm{B}}\;\)}
+\newcommand{\CsubN}{\(\mathrm{C}_{\mathrm{N}}\;\)}
+\newcommand{\vacb}{\(\mathrm{V}_{\mathrm{B}}\;\)}
+\newcommand{\vacn}{\(\mathrm{V}_{\mathrm{N}}\;\)}
+\newcommand{\wbn}{$w$BN }
+\newcommand{\hbn}{$h$BN }
+\newcommand{\cbn}{$c$BN }
+\newcommand{\rbn}{$r$BN }
+\newcommand{\etal}{\textit{et al.}\;}
+\newcommand{\abinitio}{\textit{ab initio} }
+
+\newcommand*{\EC}[1]{\textcolor{blue}{[EC: #1]}}
+\newcommand*{\TODO}[1]{\textcolor{magenta}{[TODO: #1]}}
+\newcommand*{\MS}[1]{\textcolor{teal}{[MS: #1]}}
+
+
+\begin{document}
+
+\title{Exciton dispersion in monolayer and bulk GeS}
+\author{Daniel Santos Stone}
+\email{martino.silvetti@univ-amu.fr}
+\affiliation{\cinam}
+\author{Yuncheng Mao}%
+\affiliation{\cinam}
+\author{Claudio Attaccalite}
+\affiliation{\cinam}
+\date{\today}% It is always \today, today,%  but any date may be explicitly specified
+
+\begin{abstract}
+	GeS is very interesting for photovoltic (shift current, transistors etc..) Despite its extensive study, limited information is available on its excitonic dispersion and velocity, critical parameters for achieving high charge mobility and efficient exciton diffusion. In this work, we employ many-body perturbation theory and the Bethe–Salpeter equation to provide a comprehensive description of the optical absorption and finite-momentum energy loss function for both bulk and monolayer GeS. Our findings reveal a strong anysotropy in the  exciton dispersion and velocity, emphasizing the significant role of low crystal symmetries.
+\end{abstract}
+
+\maketitle
+
+
+
+
+%================================
+\section{Introduction}
+\section{Methods}
+\section{Results}
+\subsection{Electronic structure}
+\subsection{Optical absorption}
+\subsection{Exciton dispersion}
+\section{\label{ackn}Acknowledgement}
+The authors acknowledge B. Demoulin and  A. Saul for the management of the computer cluster \emph{Rosa}. 
+\bibliographystyle{apsrev4-1}
+\bibliography{remap_op.bib}% Produces the bibliography via BibTeX.
+\end{document}
