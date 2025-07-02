@@ -1,0 +1,30 @@
+ &control
+    calculation='scf'
+    restart_mode='from_scratch',
+    pseudo_dir = './',
+    prefix='GeS',
+    outdir='./',
+    verbosity = 'high'
+ /
+ &system
+    ibrav= 8,
+    A = 3.6779980129, 
+    B = 4.3745591444,  
+    C = 15.8753165339, 
+    nat = 4, 
+    ntyp = 2,
+    ecutwfc = 80,
+/
+ &electrons
+    conv_thr = 1.0d-12
+/
+ATOMIC_SPECIES
+ Ge  78.96  Ge.stringent.upf 
+ S   32     S.dojo.UPF
+ATOMIC_POSITIONS {angstrom}
+Ge        0.0               3.8352248040      12.6171561590
+Ge        1.8389990065      1.6488470617      10.0634754393
+S         1.8389990065      2.1870160232      12.4230272001
+S         0.0               4.3751557221      10.2575037490
+K_POINTS {automatic}
+24 24 1 1 1 0
