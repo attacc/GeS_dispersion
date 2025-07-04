@@ -34,9 +34,6 @@
 \usepackage{float}
 \usepackage{multirow}
 
-\def\kk         {{\bf k}}
-\def\qq		{{\bf q}}
-\def\rr         {{\bf r}}
 
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -74,10 +71,11 @@
 
 
 \begin{document}
+\include{alias}
 
 \title{Exciton dispersion in monolayer and bulk GeS}
 \author{Daniel Santos Stone}
-\email{martino.silvetti@univ-amu.fr}
+\email{@univ-amu.fr}
 \affiliation{\cinam}
 \author{Yuncheng Mao}%
 \affiliation{\cinam}
@@ -97,6 +95,21 @@
 %================================
 \section{Introduction}
 \section{Methods}
+To build the BSE at finite momentum $\qq$ we consider all the transitions $t : (v,\kk - \qq) \rightarrow (c,\kk)$.
+We use finite momentum BSE.
+The BSE Hamiltonian writes:
+\be
+\langle t | H_{\mathrm{exc}} | t' \rangle = E_t \delta_{t, t'} + \langle t | v - W | t' \rangle,
+\ee
+we solve it for each momentum $\qq$ in the irreducible Brillouen Zone.
+
+\be
+H_{\mathrm{exc}}(\mathbf{q}_r) A_{\lambda}(\mathbf{q}_r) = E_{\lambda}(\mathbf{q}_r) A_{\lambda}(\mathbf{q}_r),
+\ee
+solving the BSE at finite momentum we obtain the dielectric constant as:
+\be
+\epsilon_M(\mathbf{q}, \omega) = 1 - \frac{8\pi}{q^2} \sum_{\lambda} \frac{\left| \sum_{t} A_{\lambda}^t(\mathbf{q}_r) \tilde{\rho}^t(\mathbf{q}) \right|^2}{\omega - E_{\lambda}(\mathbf{q}_r) + i \eta}
+\ee
 \section{Results}
 \subsection{Electronic structure}
 \subsection{Optical absorption}
